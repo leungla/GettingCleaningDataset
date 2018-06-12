@@ -60,7 +60,7 @@ combined["subjectId"] <- rbind(subjTrain, subjTest)
 summaryData <- gather(combined, variable, value, -activity, -subjectId)
 summaryData <- group_by(summaryData, activity, subjectId, variable)
 summaryData <- summarize(summaryData, value=mean(value))
-summaryData <- rename(summaryData, mean=value)
+summaryData <- rename(summaryData, feature=variable, mean=value)
 write.table(summaryData, "./data/UCI_HAR_summary.txt", row.names=FALSE)
 
 

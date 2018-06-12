@@ -1,4 +1,4 @@
-"activity" "subjectId" "variable" "mean"
+"activity" "subjectId" "feature" "mean"
 "laying" 19 "fBodyAccJerk-mean()-X" -0.48421303958461
 "laying" 19 "fBodyAccJerk-mean()-Y" -0.49177051765
 "laying" 19 "fBodyAccJerk-mean()-Z" -0.596987771010638

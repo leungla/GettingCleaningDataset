@@ -1,7 +1,7 @@
 # GettingCleaningDataset
 This project contains files for the "Getting and Cleaning Data" course project.
-The goal of the project is to clean and summarize the UCI Human Activity 
-Recognition Using Smartphones Data Set (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+The goal of the project is to clean and summarize the [UCI Human Activity 
+Recognition Using Smartphones Data Set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
 ## Project Contents
 1. README.md

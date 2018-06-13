@@ -61,6 +61,12 @@ summaryData <- gather(combined, variable, value, -activity, -subjectId)
 summaryData <- group_by(summaryData, activity, subjectId, variable)
 summaryData <- summarize(summaryData, value=mean(value))
 summaryData <- rename(summaryData, feature=variable, mean=value)
+# Can also recast to a fat wide table
+# summaryData <- spread(summaryData, feature, mean)
+# headers <- colnames(summaryData)
+# headers <- gsub("^fB", "mean fB", headers)
+# headers <- gsub("^t", "mean t", headers)
+# colnames(summaryData) <- headers
 write.table(summaryData, "./data/UCI_HAR_summary.txt", row.names=FALSE)
 
 
